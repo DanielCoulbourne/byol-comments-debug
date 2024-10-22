@@ -10,9 +10,7 @@
     <body class="font-sans antialiased dark:bg-black dark:text-white/50">
         {{-- <iframe src="https://player.vimeo.com/video/1007718657?h=e29a38128e" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe> --}}
 
-        {{-- <livewire:comments video="{{$video}}" /> --}}
-        <livewire:foo-parent />
-
+        <livewire:comments video="{{$video}}" />
 
         @livewireScripts
     </body>
