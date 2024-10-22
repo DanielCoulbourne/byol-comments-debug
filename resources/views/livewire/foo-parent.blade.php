@@ -8,7 +8,9 @@
 
 
             <div
+                {{-- comment out this x-show and everything works --}}
                 x-show="show"
+
                 wire:key="container-{{$foo}}"
             >
                 <livewire:foo wire:key="togglable-{{$foo}}" />
