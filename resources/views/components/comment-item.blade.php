@@ -15,9 +15,9 @@
         <button type="button" x-on:click="show = !show">💬</button>
     </div>
     
-    {{-- <div x-show="show" key="reply-container-{{$nest}}-{{$comment->id}}"> --}}
+    <div x-show="show" key="reply-container-{{$nest}}-{{$comment->id}}">
         <livewire:comment-reply-form :parent_id="$parent_id ?? $comment->id" key="reply-{{$nest}}-{{$comment->id}}"/>
-    {{-- </div> --}}
+    </div>
 
     <ul>
         @foreach ($comment->children as $child)
